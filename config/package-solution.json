@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "Mayco-Hartford-Quality-client-side-solution-PROD",
+    "id": "09b14889-17ca-45bd-a7ce-52c9ac0519E2",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.21.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Mayco-Hartford-Quality description"
+      },
+      "longDescription": {
+        "default": "Mayco-Hartford-Quality description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "Mayco-Hartford-Quality Feature",
+        "description": "The feature that activates elements of the Mayco-Hartford-Quality solution Production.",
+        "id": "dcd65aaf-9691-4913-86b1-65d37be8820c",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/Mayco-Hartford-Quality-PROD.sppkg"
+  }
+}
