@@ -6,72 +6,10 @@ __________________________
 
 1.package-solution.JSON :
 --------------------------
-{
-  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
-  "solution": {
-    "name": "Mayco-Merrill-Quality-client-side-solution-Dev",
-    "id": "09b14889-17ca-45bd-a7ce-52c9ac0519E9",
-    "version": "1.0.0.0",
-    "includeClientSideAssets": true,
-    "skipFeatureDeployment": true,
-    "isDomainIsolated": false,
-    "developer": {
-      "name": "",
-      "websiteUrl": "",
-      "privacyUrl": "",
-      "termsOfUseUrl": "",
-      "mpnId": "Undefined-1.21.1"
-    },
-    "metadata": {
-      "shortDescription": {
-        "default": "Mayco-Merrill-Quality description"
-      },
-      "longDescription": {
-        "default": "Mayco-Merrill-Quality description"
-      },
-      "screenshotPaths": [],
-      "videoUrl": "",
-      "categories": []
-    },
-    "features": [
-      {
-        "title": "Mayco-Merrill-Quality Feature",
-        "description": "The feature that activates elements of the Mayco-Merrill-Quality solution Development.",
-        "id": "dcd65aaf-9691-4913-86b1-65d37be8820c",
-        "version": "1.0.0.0"
-      }
-    ]
-  },
-  "paths": {
-    "zippedPackage": "solution/Mayco-Merrill-Quality-Dev.sppkg"
-  }
-}
+
 2. MaycoSafetyWebPart.manifest.json:
 ------------------------------------
-{
-  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
-  "id": "74a9fa60-3b81-4890-be3f-1f65aefd835e",
-  "alias": "Mayco-Merrill-QualityWebPart",
-  "componentType": "WebPart",
 
-  "version": "*",
-  "manifestVersion": 2,
-
-  "requiresCustomScript": false,
-  "supportedHosts": ["SharePointWebPart", "TeamsPersonalApp", "TeamsTab", "SharePointFullPage"],
-  "supportsThemeVariants": true,
-
-  "preconfiguredEntries": [{
-    "groupId": "5c03119e-3074-46fd-976b-c60198311f70", 
-    "group": { "default": "Advanced" },
-    "title": { "default": "Mayco-Merrill-Quality-Dev" },
-    "description": { "default": "Mayco-Merrill-Quality description development" },
-    "officeFabricIconFontName": "Page",
-    "properties": {
-      "description": "Mayco-Merrill-Quality-Dev"
-    }
-  }]
-}
 
 
 
@@ -87,8 +25,8 @@ __________________________
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "Mayco-Merrill-Quality-client-side-solution-PROD",
-    "id": "09b14889-17ca-45bd-a7ce-52c9ac0519E0",
+    "name": "Mayco-Warren-Quality-client-side-solution-PROD",
+    "id": "09b14889-17ca-45bd-a7ce-52c9ac0519E5",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
@@ -102,10 +40,10 @@ __________________________
     },
     "metadata": {
       "shortDescription": {
-        "default": "Mayco-Merrill-Quality description"
+        "default": "Mayco-Warren-Quality description"
       },
       "longDescription": {
-        "default": "Mayco-Merrill-Quality description"
+        "default": "Mayco-Warren-Quality description"
       },
       "screenshotPaths": [],
       "videoUrl": "",
@@ -113,15 +51,15 @@ __________________________
     },
     "features": [
       {
-        "title": "Mayco-Merrill-Quality Feature",
-        "description": "The feature that activates elements of the Mayco-Merrill-Quality solution Production.",
+        "title": "Mayco-Warren-Quality Feature",
+        "description": "The feature that activates elements of the Mayco-Warren-Quality solution Production.",
         "id": "dcd65aaf-9691-4913-86b1-65d37be8820c",
         "version": "1.0.0.0"
       }
     ]
   },
   "paths": {
-    "zippedPackage": "solution/Mayco-Merrill-Quality-PROD.sppkg"
+    "zippedPackage": "solution/Mayco-Warren-Quality-PROD.sppkg"
   }
 }
 
@@ -130,8 +68,8 @@ __________________________
 ------------------------------------
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
-  "id": "74a9fa60-3b81-4890-be3f-1f65aefd831e",
-  "alias": "Mayco-Merrill-QualityWebPart",
+  "id": "74a9fa60-3b81-4890-be3f-1f65aefd822f",
+  "alias": "Mayco-Warren-QualityWebPart",
   "componentType": "WebPart",
 
   "version": "*",
@@ -144,11 +82,11 @@ __________________________
   "preconfiguredEntries": [{
     "groupId": "5c03119e-3074-46fd-976b-c60198311f70", 
     "group": { "default": "Advanced" },
-    "title": { "default": "Mayco-Merrill-Quality-PROD" },
-    "description": { "default": "Mayco-Merrill-Quality description production" },
+    "title": { "default": "Mayco-Warren-Quality-PROD" },
+    "description": { "default": "Mayco-Warren-Quality description production" },
     "officeFabricIconFontName": "Page",
     "properties": {
-      "description": "Mayco-Merrill-Quality-PROD"
+      "description": "Mayco-Warren-Quality-PROD"
     }
   }]
 }

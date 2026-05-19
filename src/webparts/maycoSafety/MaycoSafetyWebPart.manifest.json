@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
-  "id": "74a9fa60-3b81-4890-be3f-1f65aefd832f",
-  "alias": "Mayco-Hartford-QualityWebPart",
+  "id": "74a9fa60-3b81-4890-be3f-1f65aefd822f",
+  "alias": "Mayco-Warren-QualityWebPart",
   "componentType": "WebPart",
 
   "version": "*",
@@ -14,11 +14,11 @@
   "preconfiguredEntries": [{
     "groupId": "5c03119e-3074-46fd-976b-c60198311f70", 
     "group": { "default": "Advanced" },
-    "title": { "default": "Mayco-Hartford-Quality-PROD" },
-    "description": { "default": "Mayco-Hartford-Quality description production" },
+    "title": { "default": "Mayco-Warren-Quality-PROD" },
+    "description": { "default": "Mayco-Warren-Quality description production" },
     "officeFabricIconFontName": "Page",
     "properties": {
-      "description": "Mayco-Hartford-Quality-PROD"
+      "description": "Mayco-Warren-Quality-PROD"
     }
   }]
 }
