@@ -42,7 +42,7 @@ const KPI: React.FC<KPIProps> = (props) => {
 
   useEffect(() => {
     highlightCurrentNav("liPPETypes");
-    document.title = "Warren - Safety | PPE Types";
+    document.title = "Warren - Safety | KPI";
     loadListData();
   }, []);
 

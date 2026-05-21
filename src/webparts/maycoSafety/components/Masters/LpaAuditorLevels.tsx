@@ -42,7 +42,7 @@ const LPAAuditorLevel: React.FC<LPAAuditorLevelProps> = (props) => {
 
   useEffect(() => {
     highlightCurrentNav("liPPETypes");
-    document.title = "Warren - Safety | PPE Types";
+    document.title = "Warren - Safety | LPA Auditor Levels";
     loadListData();
   }, []);
 

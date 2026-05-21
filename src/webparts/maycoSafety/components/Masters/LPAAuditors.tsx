@@ -61,7 +61,7 @@ const LPAAuditors: React.FC<LPAAuditorsProps> = (props) => {
   // Load initial data
   useEffect(() => {
     highlightCurrentNav("liPPETypes");
-    document.title = "Warren - Quality | LPA Auditor Levels";
+    document.title = "Warren - Quality | LPA Auditors";
     loadListData();
     loadAuditorsLevels();
   }, []);
