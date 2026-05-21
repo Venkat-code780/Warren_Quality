@@ -61,7 +61,7 @@ const LPAAuditors: React.FC<LPAAuditorsProps> = (props) => {
   // Load initial data
   useEffect(() => {
     highlightCurrentNav("liPPETypes");
-    document.title = "JVIS - Quality | LPA Auditor Levels";
+    document.title = "Warren - Quality | LPA Auditor Levels";
     loadListData();
     loadAuditorsLevels();
   }, []);
@@ -311,7 +311,7 @@ const LPAAuditors: React.FC<LPAAuditorsProps> = (props) => {
       },
     },
     {
-      headerName: "Audit Level",
+      headerName: "Auditor",
       field: "Title",
       sortable: true,
       filter: "agTextColumnFilter",

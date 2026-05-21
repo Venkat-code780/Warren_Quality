@@ -43,7 +43,7 @@ const AuditCategories: React.FC<AuditCategoryProps> = (props) => {
 
   useEffect(() => {
     highlightCurrentNav("liPPETypes");
-    document.title = "Mayco - Safety | PPE Types";
+    document.title = "Warren - Safety | PPE Types";
     loadListData();
   }, []);
 

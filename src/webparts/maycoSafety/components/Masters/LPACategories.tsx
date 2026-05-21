@@ -63,7 +63,7 @@ const LPACategories: React.FC<LPACategoriesProps> = (props) => {
     // Load initial data
     useEffect(() => {
         highlightCurrentNav("liPPETypes");
-        document.title = "JVIS - Quality | LPA Auditor Levels";
+        document.title = "Warren - Quality | LPA Categories";
         // loadListData();
         loadAuditorsLevels();
                 setTimeout(() => {
@@ -267,7 +267,7 @@ const insertOrUpdate = async () => {
                 .getById(itemId)
                 .update(data);
 
-            showToast("success", "Updated successfully");
+            showToast("success", "LPA Category updated successfully");
 
         } else {
 
@@ -278,7 +278,7 @@ const insertOrUpdate = async () => {
 
             console.log("ADD RESULT => ", addResult);
 
-            showToast("success", "Inserted successfully");
+            showToast("success", "LPA Category inserted successfully");
         }
 
         setCategoryRows([]);
@@ -377,30 +377,29 @@ const handleOrderChange = (changedIndex: number, newValue: number) => {
 
     const updated = [...categoryRows];
 
-    // Find row having selected order
+    // Find index having selected order
     const targetIndex = updated.findIndex(
-        (row, index) =>
-            row.Order === newValue && index !== changedIndex
+        (row) => row.Order === newValue
     );
 
-    if (targetIndex !== -1) {
+    if (targetIndex === -1) return;
 
-        // Swap order values
-        const tempOrder = updated[changedIndex].Order;
+    // Swap ENTIRE rows
+    const temp = updated[changedIndex];
 
-        updated[changedIndex].Order = updated[targetIndex].Order;
-        updated[targetIndex].Order = tempOrder;
+    updated[changedIndex] = updated[targetIndex];
+    updated[targetIndex] = temp;
 
-        // Sort rows by Order
-        updated.sort((a, b) => a.Order - b.Order);
-    }
+    // Reassign sequential order
+    const finalRows = updated.map((row, index) => ({
+        ...row,
+        Order: index + 1
+    }));
 
-    setCategoryRows(updated);
+    setCategoryRows(finalRows);
 
-    // IMPORTANT
     const categoriesString =
-        updated
-            .sort((a, b) => a.Order - b.Order)
+        finalRows
             .map(row => row.Category)
             .join("#;&@") + "#;&@";
 
